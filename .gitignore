@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data
+data/
+
+# VS Code
+.vscode/
+
+# Docker
+*.log
