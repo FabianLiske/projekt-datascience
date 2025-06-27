@@ -4,6 +4,7 @@ __pycache__/
 
 # Notebooks
 .ipynb_checkpoints/
+.Trash-1000
 
 # Data
 data/
