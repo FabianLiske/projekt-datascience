@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     git \
     curl \
+    openssh-client \
   && rm -rf /var/lib/apt/lists/*
 
 # Arbeitsverzeichnis
@@ -21,6 +22,11 @@ EXPOSE 8888
 
 # Dev-User anlegen
 RUN useradd -m devuser
+
+# Berechtigungen für .ssh (wird gemountet)
+USER root
+RUN mkdir -p /home/devuser/.ssh \
+ && chown -R devuser:devuser /home/devuser/.ssh
 
 # Zum Dev-User wechseln
 USER devuser
