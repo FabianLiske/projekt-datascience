@@ -52,6 +52,6 @@ Ergänze oder entferne Pfade, die nicht versioniert werden sollen.
 4. **Jupyter starten** Jupyter startet automatisch. Die URL aus dem Terminalhat beeits das Login-Token.
 
 ## E. Arbeiten & Versionieren
-Schreibe Code in src/ und erstelle oder bearbeite Notebooks in notebooks/.
+Schreibe Code in `src/` und erstelle oder bearbeite Notebooks in `notebooks/`.
 Speichern läuft automatisch über das Bind-Mount ins Host-Repo.
 Committe alle Änderungen wie gewohnt mit Git.
