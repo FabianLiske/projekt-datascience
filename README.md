@@ -31,8 +31,7 @@ Ergänze oder entferne Pfade, die nicht versioniert werden sollen.
 1. **VS Code öffnen** Öffne das Projekt-Verzeichnis in VS Code.
 2. **Dev Container starten** Drücke F1 → Remote-Containers: Reopen in Container. VS Code baut und verbindet sich automatisch.
 3. **Abhängigkeiten** Alle Pakete aus requirements.txt wurden beim Container-Build installiert.
-4. **Jupyter starten** (Port 8888 weitergeleitet)
-`jupyter lab --ip=0.0.0.0 --port=8888 --no-browser`
+4. **Jupyter starten** Jupyter startet automatisch. Die URL aus dem Terminalhat beeits das Login-Token.
 
 ## D. Arbeiten & Versionieren
 Schreibe Code in src/ und erstelle oder bearbeite Notebooks in notebooks/.
