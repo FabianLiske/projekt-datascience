@@ -1,7 +1,10 @@
 # Data Science Dev Container Template
 
 ## A. Repository kopieren
-1. **Repo klonen** `git clone --depth 1 https://github.com/FabianLiske/ds-dev-container-template.git neues-repo`
+1. **Repo klonen** Überall das `neues-repo` durch einen Namen der Wahl ersetzen.
+```bash
+git clone --depth 1 https://github.com/FabianLiske/ds-dev-container-template.git neues-repo
+```
 2. **Git Tree löschen**
 ```bash
 cd neues-repo
