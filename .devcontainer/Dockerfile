@@ -3,11 +3,17 @@ FROM python:3.10-slim
 
 # System-Abhängigkeiten
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    openjdk-21-jdk-headless \
     build-essential \
     git \
     curl \
     openssh-client \
-  && rm -rf /var/lib/apt/lists/*
+    ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
+
+# Java-Umgebungsvariablen
+ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 # Arbeitsverzeichnis
 WORKDIR /workspace

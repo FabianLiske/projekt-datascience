@@ -1,0 +1,9 @@
+data/
+**/*.csv
+**/*.csv.gz
+**/*.parquet
+**/*.ipynb
+.git
+.vscode
+__pycache__/
+*.pyc
