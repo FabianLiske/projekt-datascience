@@ -4,6 +4,15 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "runArgs": [
+    "--cpus=64",
+    "--memory=200g",
+    "--memory-swap=200g",
+    "--shm-size=16g"
+  ],
+  "containerEnv": {
+    "PYSPARK_SUBMIT_ARGS": "--conf spark.master=local[64] --driver-memory 180g --conf spark.sql.shuffle.partitions=256 --conf spark.sql.files.maxPartitionBytes=256m --conf spark.driver.maxResultSize=4g --conf spark.sql.parquet.compression.codec=snappy pyspark-shell"
+  },
   "customizations": {
     "vscode": {
       "settings": {
